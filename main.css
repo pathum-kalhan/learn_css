@@ -1,0 +1,61 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0
+}
+
+#product-overview{
+    background: #ff1b68;
+    height: 528px;
+   
+}
+
+#product-overview h1{
+    color:white;
+   font-family: 'Anton', sans-serif;
+}
+
+.section-title{
+    color: #2ddf5c;
+}
+
+.main-header{
+    background: #2ddf5c;
+    padding: 8px 16px;
+}
+
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.brand{
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav{
+    display: inline-block;
+    width: calc(100% - 70px);
+    text-align: right;
+    vertical-align: middle;
+    
+}
+
+.main-nav__items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-nav__item{
+    display: inline-block;
+    margin: 0 8px;
+  
+}
+
+.main-nav__item a{
+    text-decoration: none;
+      color: #0e4f1f;
+}
