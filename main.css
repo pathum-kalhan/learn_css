@@ -4,7 +4,7 @@ body{
 }
 
 #product-overview{
-    background: #ff1b68;
+    background: url('https://images.pexels.com/photos/1146242/pexels-photo-1146242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     height: 528px;
    
 }
@@ -14,8 +14,46 @@ body{
    font-family: 'Anton', sans-serif;
 }
 
+
 .section-title{
     color: #2ddf5c;
+    text-align: center;
+}
+
+.plan{
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 29%;
+    vertical-align: middle
+
+}
+
+.plan--highlighted{
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
+}
+
+.plan__annotation{
+    background: white;
+    color: #0e4f1f;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.plan ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan li{
+    margin:8px 0px;
 }
 
 .main-header{
@@ -58,4 +96,29 @@ body{
 .main-nav__item a{
     text-decoration: none;
       color: #0e4f1f;
+      font-weight: bold;
+      padding: 3px 0;
 }
+
+.main-nav__item a:hover,
+.main-nav__item a:active
+{
+      color: white;
+      border-bottom: 5px solid white
+}
+
+.main-nav__item--cta a{
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active
+{
+      background: white;
+      color: #ff1b68;
+      border: none
+}
+
