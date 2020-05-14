@@ -1,12 +1,11 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin:0
-}
+
 
 #product-overview{
     background: url('https://images.pexels.com/photos/1146242/pexels-photo-1146242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     height: 528px;
-   
+    background-size: cover;
+    background-repeat: no-repeat;   
+    background-position:0% 100%
 }
 
 #product-overview h1{
@@ -25,16 +24,21 @@ body{
     text-align: center;
     padding: 16px;
     margin: 8px;
-    display: inline-block;
-    width: 29%;
+    /* display: inline-block; */
+    /* width: 29%; */
     vertical-align: middle
 
+}
+
+.plans__list{
+    /* width:80%; */
+    /* margin: auto; */
+    text-align: center;
 }
 
 .plan--highlighted{
     background: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
 }
 
 .plan__title{
@@ -53,21 +57,75 @@ body{
     color: #0e4f1f
 }
 
-.button{
-    background: #0e4f1f;
-    color:white;
-    font:inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
+@media (min-width:40rem){
+    .plan--highlighted{
+ box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
+}
+.plan{
+       display: inline-block; 
+ width: 29%;
+ vertical-align: middle;
+ max-width: 20rem;
+}
+    
+
 }
 
-.button:hover,
-.button:active{
-    background: white;
-    color:#0e4f1f;
+
+
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title{
+    color: white;
+    margin: 32px;
+}
+
+/* #key-features ul li{
+    display: inline-block;
+    margin: 0px 16px;
+} */
+
+.key-features__list{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.key-feature{
+    /* display: inline-block; */
+    /* width: 30%; */
+      vertical-align: top;
+    
+}
+
+.key-feature__image{
+    background: #ffcede;
+    width: 128px;
+    height:128px;
+    border:2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.key-feature__description{
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    font-size:20px;
+  
+}
+
+@media(min-width:40rem){
+    .key-feature{
+        display: inline-block; 
+        width: 30%;
+
+    }
 }
 
 .plan__annotation{
@@ -89,69 +147,54 @@ body{
     margin:8px 0px;
 }
 
-.main-header{
-    background: #2ddf5c;
-    padding: 8px 16px;
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.main-header > div{
-    display: inline-block;
-    vertical-align: middle;
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
-.brand{
-    text-decoration: none;
-    color: #0e4f1f;
-    font-weight: bold;
-    font-size: 22px;
+.modal__actions {
+  text-align: center;
 }
 
-.main-nav{
-    display: inline-block;
-    width: calc(100% - 70px);
-    text-align: right;
-    vertical-align: middle;
-    
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
-.main-nav__items{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
 }
 
-.main-nav__item{
-    display: inline-block;
-    margin: 0 8px;
-  
+.modal__action--negative {
+  background: red;
+  border-color: red;
 }
 
-.main-nav__item a{
-    text-decoration: none;
-      color: #0e4f1f;
-      font-weight: bold;
-      padding: 3px 0;
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
 }
 
-.main-nav__item a:hover,
-.main-nav__item a:active
-{
-      color: white;
-      border-bottom: 5px solid white
-}
 
-.main-nav__item--cta a{
-    color: white;
-    background: #ff1b68;
-    padding: 8px 16px;
-    border-radius: 8px
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active
-{
-      background: white;
-      color: #ff1b68;
-      border: none
-}
 

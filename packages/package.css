@@ -1,0 +1,84 @@
+.plan{
+    border:4px solid #043304;
+    margin-bottom: 16px;
+    padding:24px;
+    width:80%;
+    border-left: none;
+    position: relative;
+}
+
+.plan a{
+    text-decoration: none;
+}
+
+.plan-title{
+    color: green;
+}
+
+.plus{
+    margin-top: 60px;
+    background: rgba(142, 236, 184,0.8);
+}
+
+.free{
+    background: rgba(196, 234, 247,0.8);
+    float:right;
+    text-align: right;
+      border-left: 4px solid #043304;
+      border-right: none;
+
+}
+
+.premium{
+    background:  rgba(4, 51, 4,0.8);
+}
+
+.premium h1{
+    color: white;
+}
+
+.premium .plan-subtitle{
+    color: #b3b3b3;
+}
+
+.plan-description{
+    padding: 24px;
+    color:rgb(4, 51, 4);
+    background: white;
+    border: 2px solid #043304;
+}
+
+.plan-subtitle{
+    color:rgb(143, 143, 143)
+}
+
+.plan:hover,
+.plan:active{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-color: #ff5454;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.background{
+    background: url('https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    position: fixed;
+    background-position: cover;
+    filter:grayscale(40%);
+    width: 100%;
+    height: 100%;
+    z-index:-1
+}
+
+.plan__badge{
+    position: absolute;
+    right: 16px;
+    top: 0;
+    color: white;
+    background:#ff5454 ;
+    padding: 8px;
+    font-size: 12px;
+}
+
